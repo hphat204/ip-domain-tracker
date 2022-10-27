@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <title>IP Address Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+      defer
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/index.js" defer></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <header>
+      <h1>IP Address Tracker</h1>
+      <div class="search-box">
+        <input type="text" class="inputValue" placeholder="Search for any IP or domain" />
+        <button class="search-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+            <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
+          </svg>
+        </button>
+      </div>
+      <div class="information-board">
+        <div class="info-card">
+          <h4 class="infoTitle">ip address</h4>
+          <p class="infoText ipAddress"></p>
+        </div>
+        <hr />
+        <div class="info-card">
+          <h4 class="infoTitle">location</h4>
+          <p class="infoText country"></p>
+        </div>
+        <hr />
+        <div class="info-card">
+          <h4 class="infoTitle">timezone</h4>
+          <p class="infoText timezone"></p>
+        </div>
+        <hr />
+        <div class="info-card">
+          <h4 class="infoTitle">isp</h4>
+          <p class="infoText isp"></p>
+        </div>
+      </div>
+    </header>
+    <section class="map-container">
+      <div id="map"></div>
+    </section>
+  </body>
+</html>
