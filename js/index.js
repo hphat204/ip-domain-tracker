@@ -2,7 +2,7 @@ const infoText = document.querySelectorAll(".infoText");
 let inputValue = document.querySelector(".inputValue");
 const searchBtn = document.querySelector(".search-btn");
 
-const apiKey = "at_8L1PYQbGQim9CFqSsWifniWWNS5pR";
+const apiKey = process.env.API_KEY;
 
 function initializedMap() {
   map = L.map("map").setView([0, 0], 13);
