@@ -19,20 +19,20 @@
       defer
     ></script>
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/index.js" defer></script>
+    <script type="module" src="js/index.js" defer></script>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
     <header>
       <h1>IP Address Tracker</h1>
-      <div class="search-box">
+      <form class="search-box">
         <input type="text" class="inputValue" placeholder="Search for any IP or domain" />
-        <button class="search-btn">
+        <button type="submit" class="search-btn">
           <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
             <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
           </svg>
         </button>
-      </div>
+      </form>
       <div class="information-board">
         <div class="info-card">
           <h4 class="infoTitle">ip address</h4>

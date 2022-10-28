@@ -102,6 +102,9 @@ hr {
 .map-container {
   height: 67%;
 }
+.inputValue.wrong-search {
+  border: 2px solid red;
+}
 
 /* map */
 #map {
